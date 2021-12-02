@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Mr. or Mrs.</title>
   <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/script.js"defer></script>
 </head>
 
 <body>
@@ -13,19 +14,20 @@
       <h1>Mr. or Mrs.?&emsp;&emsp;&emsp;</h1>
       <form name="inputs">
         Name
-        <input type="text" id="name" name="txtSearch" value="" size="20" maxlength="64" /><br /><br />
-        <input type="radio" id="male" name="grade" value="B" /> Male <br /><br />
-        <input type="radio" id="female" name="grade" value="M" /> Female <br /><br />
-        <button id="submit" >Submit</button><br /><br />
+        <input type="text" id="name" name="name" size="20" maxlength="255" /><br /><br />
+        <input type="radio" id="male" name="grade" value="m" /> Male <br /><br />
+        <input type="radio" id="female" name="grade" value="f" /> Female <br /><br />
+        <button id="submit" onclick="return submitn()">Submit</button><br /><br />
         <button id="save">Save</button>
       </form>
     </div>
     <div>
       <h1>Prediction</h1>
-      <div>submit a name.</div><br />
-      <div>
+      <div id="maleOrFemale">submit a name.</div><br />
+      <div id="probability">submit a name.</div><br />
+      <div style="border-style: dotted;border-width: 2px;padding: 5px;">
         <h2>Saved Answer</h2>
-        <div>submit a name.</div><br />
+        <div id="saved">submit a name.</div><br />
         <button>Clear</button>
       </div>
     </div>
