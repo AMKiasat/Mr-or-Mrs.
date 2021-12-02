@@ -1,3 +1,4 @@
+// This function does the work of submit button and shows the results of the search in localStorage and https://api.genderize.io/?name= web site
 function submitN() {
     let name = document.getElementById("name").value;
     var xmlHttp = new XMLHttpRequest();
@@ -19,6 +20,7 @@ function submitN() {
     }
 }
 
+// This function does the work of the save button and it saves the male or female results in localStorage
 function saveN() {
     let name = document.getElementById("name").value;
     if (name != "") {
@@ -48,12 +50,12 @@ function saveN() {
     }
 }
 
+// This function does the work of the clear button and it removes the entered name from localStorage
 function clearN() {
     let name = document.getElementById("name").value;
     if (name != "") {
         localStorage.removeItem(name);
         document.getElementById("saved").innerHTML = "submit a name.";
-        console.log("shod")
     }
     else {
         document.getElementById("maleOrFemale").innerHTML = "submit a name.";
