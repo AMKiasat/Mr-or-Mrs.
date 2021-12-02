@@ -17,8 +17,8 @@
         <input type="text" id="name" name="name" size="20" maxlength="255" /><br /><br />
         <input type="radio" id="male" name="grade" value="m" /> Male <br /><br />
         <input type="radio" id="female" name="grade" value="f" /> Female <br /><br />
-        <button id="submit" onclick="return submitn()">Submit</button><br /><br />
-        <button id="save">Save</button>
+        <button id="submit" type="button" onclick="return submitN()">Submit</button><br /><br />
+        <button id="save" type="button" onclick="return saveN()">Save</button>
       </form>
     </div>
     <div>
@@ -28,7 +28,7 @@
       <div style="border-style: dotted;border-width: 2px;padding: 5px;">
         <h2>Saved Answer</h2>
         <div id="saved">submit a name.</div><br />
-        <button>Clear</button>
+        <button id="clear" type="button" onclick="return clear()">Clear</button>
       </div>
     </div>
   </div>
