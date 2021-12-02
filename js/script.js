@@ -23,14 +23,20 @@ function saveN() {
     let name = document.getElementById("name").value;
     if (name != "") {
         if (document.getElementById("male").checked) {
+            if (localStorage.getItem(name) != null)
+                localStorage.removeItem(name);
             localStorage.setItem(name, "male");
             document.getElementById("saved").innerHTML = "male";
         }
         else if (document.getElementById("female").checked) {
+            if (localStorage.getItem(name) != null)
+                localStorage.removeItem(name);
             localStorage.setItem(name, "female");
             document.getElementById("saved").innerHTML = "female";
         }
         else if (document.getElementById("maleOrFemale").innerHTML != "submit a name.") {
+            if (localStorage.getItem(name) != null)
+                localStorage.removeItem(name);
             localStorage.setItem(name, document.getElementById("maleOrFemale").innerHTML);
             document.getElementById("saved").innerHTML = document.getElementById("maleOrFemale").innerHTML;
         }
