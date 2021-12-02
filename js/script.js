@@ -41,3 +41,17 @@ function saveN() {
         document.getElementById("saved").innerHTML = "submit a name.";
     }
 }
+
+function clearN() {
+    let name = document.getElementById("name").value;
+    if (name != "") {
+        localStorage.removeItem(name);
+        document.getElementById("saved").innerHTML = "submit a name.";
+        console.log("shod")
+    }
+    else {
+        document.getElementById("maleOrFemale").innerHTML = "submit a name.";
+        document.getElementById("probability").innerHTML = "submit a name.";
+        document.getElementById("saved").innerHTML = "submit a name.";
+    }
+}
