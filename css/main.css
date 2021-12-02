@@ -1,4 +1,9 @@
-p code:first-child {color: blue;}
-  p::first-letter {font-size: 200%;}
-  p::first-line {color: red;}
-  .google::after{content:url("google_logo.gif");}
+body {
+    border-style:solid;
+    border-width:1px;
+    border-color:black;
+    margin-left:0.5cm;
+    padding-left:3cm;
+    margin-right:3cm;
+    padding-right:0.5cm;
+}
