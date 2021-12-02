@@ -15,7 +15,7 @@ function submitN() {
         document.getElementById("saved").innerHTML = "submit a name.";
         if (name == "")
             document.getElementById("problem").innerHTML = "Enter a name.";
-        else if (json.probability == 0)
+        else if (json.probability == 0 && localStorage.getItem(name) == null)
             document.getElementById("problem").innerHTML = "There isn't any name like  yours.";
         if (localStorage.getItem(name) != null)
             document.getElementById("saved").innerHTML = localStorage.getItem(name)
