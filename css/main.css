@@ -1,0 +1,4 @@
+p code:first-child {color: blue;}
+  p::first-letter {font-size: 200%;}
+  p::first-line {color: red;}
+  .google::after{content:url("google_logo.gif");}
